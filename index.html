@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Teko:wght@300..700&display=swap&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-nav">
+            <div class="nav-left"><a href="">VFL</a></div>
+            <a href="index.html"><i class="fas fa-home"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+
+
+    </header>
+    <div id="Welcome-banner">
+        <div class="banner-text">Vellore Institute <br> of Technology <br>Faculty Locator</div>
+    </div>
+
+    <main>
+        <div id="content-container">
+
+            <section class="intro">
+                <h2>Find Your Professors Easily</h2>
+                <p>Use our dynamic directory to locate your professors' cabins and their free timings today!</p>
+            </section>
+            <form action="faculty_free.html">
+                <div class="search-div">
+                    <section class="search-bar">
+                        <input id="get-faculty-name" type="text" placeholder="Search for Faculty...">
+                        <button onclick="getFaculty()" type="submit">Search</button>
+                    </section>
+                </form>
+                    <!-- <section class="or">
+                <h2>or</h2>
+            </section> -->
+
+            <form autocomplete="off" action="faculty_cabins.html">
+                    <section class="search-bar">
+                        <input id="get-school-name" type="text" placeholder="Search for Schools...">
+                        <button onclick="getSchool()" type="submit">Search</button>
+                    </section>
+                </div>
+            </form>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy;VIT Faculty Locator.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
